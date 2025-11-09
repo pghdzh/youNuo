@@ -401,8 +401,8 @@ function formatTime(iso: string) {
 // 新增变量（你原有变量可保留或覆盖）
 $bg-dark: #050714; // 极深紫黑
 $bg-deep: #071028; // 深紫中底
-$accent-main: #7fd8ff; // 血玫红高光
-$accent-secondary: #ffd78a; // 冷紫次光
+$accent-1: #4ea6ff; // 暗紫主光（冷雅）
+$accent-2: #8fd9ff; // 冷海蓝高光（湿光感）
 $text-light: #f4f8fb; // 苍白文字
 $text-muted2: rgba(232, 229, 233, 0.72);
 $glass-border: rgba(154, 119, 183, 0.08);
@@ -479,7 +479,7 @@ $glow-inner: rgba(209, 72, 100, 0.04);
         display: inline-block;
         font-weight: 900;
         letter-spacing: 0.6px;
-        color: $accent-main;
+        color: $accent-1;
         text-shadow: 0 6px 22px rgba(20, 10, 16, 0.12);
       }
 
@@ -503,7 +503,7 @@ $glow-inner: rgba(209, 72, 100, 0.04);
       border-radius: 14px;
       padding: 0;
       box-shadow: 0 18px 56px rgba(0, 0, 0, 0.72);
-      border: 1px solid rgba($accent-secondary, 0.05);
+      border: 1px solid rgba($accent-2, 0.05);
       background: linear-gradient(
         180deg,
         rgba(10, 4, 8, 0.3),
@@ -517,8 +517,8 @@ $glow-inner: rgba(209, 72, 100, 0.04);
 
         .toggle {
           background: transparent;
-          border: 1px solid rgba($accent-secondary, 0.08);
-          color: $accent-main;
+          border: 1px solid rgba($accent-2, 0.08);
+          color: $accent-1;
           padding: 6px 10px;
           border-radius: 8px;
           cursor: pointer;
@@ -544,14 +544,14 @@ $glow-inner: rgba(209, 72, 100, 0.04);
             flex: 1 1 0;
             padding: 10px 12px;
             border-radius: 10px;
-            border: 1px solid rgba($accent-secondary, 0.04);
+            border: 1px solid rgba($accent-2, 0.04);
             font-size: 14px;
             background: linear-gradient(
               180deg,
               rgba($bg-dark, 0.28),
               rgba($bg-deep, 0.2)
             );
-            color: $accent-main;
+            color: $accent-1;
             font-weight: 700;
             outline: none;
             transition: box-shadow 0.16s, border-color 0.16s, transform 0.08s;
@@ -564,13 +564,13 @@ $glow-inner: rgba(209, 72, 100, 0.04);
 
           input::placeholder,
           select::placeholder {
-            color: rgba($accent-secondary, 0.5);
+            color: rgba($accent-2, 0.5);
           }
 
           input:focus,
           select:focus {
-            border-color: rgba($accent-main, 0.36);
-            box-shadow: 0 12px 36px rgba($accent-main, 0.08);
+            border-color: rgba($accent-1, 0.36);
+            box-shadow: 0 12px 36px rgba($accent-1, 0.08);
             transform: translateY(-1px);
           }
         }
@@ -590,9 +590,9 @@ $glow-inner: rgba(209, 72, 100, 0.04);
             &.primary {
               background: linear-gradient(
                 135deg,
-                $accent-main 0%,
-                $accent-secondary 55%,
-                rgba($accent-main, 0.8) 100%
+                $accent-1 0%,
+                $accent-2 55%,
+                rgba($accent-1, 0.8) 100%
               );
               color: #1c0c12;
               box-shadow: 0 12px 36px rgba(80, 20, 30, 0.1);
@@ -607,7 +607,7 @@ $glow-inner: rgba(209, 72, 100, 0.04);
             &.secondary {
               background: transparent;
               color: rgba(215, 195, 205, 0.9);
-              border: 1px solid rgba($accent-secondary, 0.06);
+              border: 1px solid rgba($accent-2, 0.06);
             }
           }
         }
@@ -634,20 +634,20 @@ $glow-inner: rgba(209, 72, 100, 0.04);
         h2 {
           font-size: 16px;
           margin: 0;
-          color: $accent-main;
+          color: $accent-1;
           font-weight: 800;
         }
 
         .sort select {
           padding: 8px;
           border-radius: 8px;
-          border: 1px solid rgba($accent-secondary, 0.08);
+          border: 1px solid rgba($accent-2, 0.08);
           background: linear-gradient(
             180deg,
             rgba(8, 2, 6, 0.58),
             rgba(4, 0, 4, 0.56)
           );
-          color: rgba($accent-main, 0.98);
+          color: rgba($accent-1, 0.98);
         }
       }
 
@@ -705,7 +705,7 @@ $glow-inner: rgba(209, 72, 100, 0.04);
             gap: 8px;
 
             .uploader {
-              color: $accent-secondary;
+              color: $accent-2;
               font-weight: 700;
             }
 
@@ -751,7 +751,7 @@ $glow-inner: rgba(209, 72, 100, 0.04);
             .like-btn.active .heart-icon {
               filter: none;
               transform: scale(1.06);
-              box-shadow: 0 6px 20px rgba($accent-main, 0.1);
+              box-shadow: 0 6px 20px rgba($accent-1, 0.1);
             }
 
             .badge {
@@ -761,11 +761,11 @@ $glow-inner: rgba(209, 72, 100, 0.04);
               font-weight: 700;
               background: linear-gradient(
                 180deg,
-                rgba($accent-secondary, 0.12),
+                rgba($accent-2, 0.12),
                 rgba(80, 40, 60, 0.06)
               );
-              color: $accent-main;
-              border: 1px solid rgba($accent-secondary, 0.04);
+              color: $accent-1;
+              border: 1px solid rgba($accent-2, 0.04);
             }
           }
         }
@@ -773,7 +773,7 @@ $glow-inner: rgba(209, 72, 100, 0.04);
 
       .empty {
         text-align: center;
-        color: $accent-main;
+        color: $accent-1;
         padding: 28px 0;
       }
     }

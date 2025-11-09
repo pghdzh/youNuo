@@ -54,7 +54,7 @@ const navItems = [
   { name: "双生瞬影", path: "/gallery" }, // 图集 - 体现卡提希娅与芙露德莉斯双形态
   { name: "圣典残章", path: "/resources" }, // 资料库 - 呼应圣女时期的典籍记载
   { name: "风息回响", path: "/talk" }, // AI对话页面
-  { name: "语音馆", path: "/talk" }, // 语音彩蛋页面
+  { name: "语音馆", path: "/voice" }, // 语音彩蛋页面
   { name: "鸢尾韵律", path: "/music" }, // 歌曲库 - 以她追求的鸢尾花为意象
 ];
 
